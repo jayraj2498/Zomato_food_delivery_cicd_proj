@@ -1,0 +1,105 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="Delivery_person_Age">Delivery Person Age:</label>
+        <input type="text" id="Delivery_person_Age" name="Delivery_person_Age" placeholder="Enter Delivery Person Age (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="Delivery_person_Ratings">Delivery Person Ratings:</label>
+        <input type="text" id="Delivery_person_Ratings" name="Delivery_person_Ratings" placeholder="Enter Delivery Person Ratings (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="Weather_conditions">Weather Conditions:</label>
+        <select id="Weather_conditions" name="Weather_conditions">
+            <option value="Fog">Fog</option>
+            <option value="Stormy">Stormy</option>
+            <option value="Sandstorms">Sandstorms</option>
+            <option value="Windy">Windy</option>
+            <option value="Cloudy">Cloudy</option>
+            <option value="Sunny">Sunny</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="Road_traffic_density">Road Traffic Density:</label>
+        <select id="Road_traffic_density" name="Road_traffic_density">
+            <option value="Jam">Jam</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+    </div>
+  
+    <div class="form-group">
+        <label for="Vehicle_condition">Vehicle Condition:</label>
+        <input type="text" id="Vehicle_condition" name="Vehicle_condition" placeholder="Enter Vehicle Condition (int)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Type_of_order">Type of Order:</label>
+        <select id="Type_of_order" name="Type_of_order">
+            <option value="Snack">Snack</option>
+            <option value="Meal">Meal</option>
+            <option value="Drinks">Drinks</option>
+            <option value="Buffet">Buffet</option>
+        </select>
+    </div>         
+  
+    <div class="form-group">
+        <label for="Type_of_vehicle">Type of Vehicle:</label>
+        <select id="Type_of_vehicle" name="Type_of_vehicle">
+            <option value="motorcycle">motorcycle</option>
+            <option value="scooter">scooter</option>
+            <option value="electric_scooter">electric_scooter</option>
+        </select>
+    </div>         
+  
+    <div class="form-group">
+        <label for="multiple_deliveries">Multiple Deliveries:</label>
+        <input type="text" id="multiple_deliveries" name="multiple_deliveries" placeholder="Enter Multiple Deliveries (float)">
+    </div>         
+  
+    <div class="form-group">
+        <label for="Festival">Festival:</label>
+        <select id="Festival" name="Festival">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select>
+    </div>         
+  
+    <div class="form-group">
+        <label for="City">City:</label>
+        <select id="City" name="City">
+            <option value="Metropolitian">Metropolitian</option>
+            <option value="Urban">Urban</option>
+            <option value="Semi-Urban">Semi-Urban</option>
+        </select>
+    </div>         
+  
+    <div class="form-group">
+        <label for="Time_Orderd_minute">Time Orderd Minute:</label>
+        <input type="text" id="Time_Orderd_minute" name="Time_Orderd_minute" placeholder="Enter Time Orderd Minute (float)">
+    </div>         
+  
+    <div class="form-group">
+        <label for="Time_Orderd_second">Time Orderd Second:</label>
+        <input type="text" id="Time_Orderd_second" name="Time_Orderd_second" placeholder="Enter Time Orderd Second (float)">
+    </div>         
+  
+    <div class="form-group">
+        <label for="Time_Order_picked_minute">Time Order Picked Minute:</label>
+        <input type="text" id="Time_Order_picked_minute" name="Time_Order_picked_minute" placeholder="Enter Time Order Picked Minute (float)">
+    </div>         
+  
+    <div class="form-group">
+        <label for="Time_Order_picked_second">Time Order Picked Second:</label>
+        <input type="text" id="Time_Order_picked_second" name="Time_Order_picked_second" placeholder="Enter Time Order Picked Second (float)">
+    </div>         
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
